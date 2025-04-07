@@ -11,7 +11,7 @@ options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+driver = webdriver.Chrome(ChromeDriverManager(version="135.0.7049.42").install(), options=options)
 
 try:
     driver.get("https://www.google.com")
